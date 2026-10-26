@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade e Segurança de Dados — Bolso App</title>
+  <style>
+    body { color: #172b2b; background: #f5f7f5; font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 24px; }
+    .container { background: #ffffff; border: 1px solid #e5ebe7; border-radius: 18px; margin: 0 auto; max-width: 800px; padding: 32px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+    h1 { color: #126b55; margin-top: 0; font-size: 26px; }
+    h2 { color: #126b55; font-size: 19px; margin-top: 28px; border-bottom: 1px solid #e7f4ee; padding-bottom: 6px; }
+    .badge { display: inline-block; background: #e7f4ee; color: #126b55; font-weight: 700; font-size: 13px; padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #126b55; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">100% Offline • Privacidade por Design</span>
+    <h1>Política de Privacidade e Segurança — Bolso App</h1>
+    <p><strong>Última atualização:</strong> 25 de outubro de 2026</p>
+    <p><strong>Desenvolvedor / Responsável:</strong> YRC Consultoria &amp; Reametec Technology</p>
+    <p><strong>Canal de Contato e Privacidade:</strong> <a href="mailto:contato@consultoriayrc.com.br">contato@consultoriayrc.com.br</a></p>
+
+    <h2>1. Coleta e Compartilhamento de Dados (Zero-Data Collection)</h2>
+    <p>O aplicativo <strong>Bolso</strong> opera de forma 100% autônoma e offline. Não exigimos cadastro, criação de conta, login, e-mail, CPF ou qualquer dado de identificação pessoal. O aplicativo de produção não solicita permissão de acesso à internet (<code>android.permission.INTERNET</code>) e não transmite, coleta ou compartilha dados pessoais, financeiros ou de uso com servidores próprios ou de terceiros. O app não contém anúncios nem ferramentas de rastreamento ou analytics.</p>
+
+    <h2>2. Armazenamento Local e Práticas de Segurança</h2>
+    <ul>
+      <li><strong>Sandbox Privada do Sistema:</strong> Todas as entradas, saídas, categorias e orçamentos são salvos exclusivamente no banco de dados SQLite local (<code>bolso_app.db</code>), armazenado na área privada do aplicativo gerenciada pelo sistema operacional Android.</li>
+      <li><strong>Criptografia de Backups (.bolso):</strong> Quando o usuário opta por exportar manualmente um arquivo de backup, os dados são criptografados no próprio aparelho utilizando o algoritmo autenticado <strong>AES-GCM de 256 bits</strong>, com chave derivada da senha definida pelo usuário via <strong>PBKDF2-HMAC-SHA256 (600.000 iterações e Salt criptográfico aleatório de 16 bytes)</strong>.</li>
+      <li><strong>Soberania da Senha:</strong> A senha do backup jamais é armazenada pelo aplicativo nem enviada a qualquer servidor. Sem a senha criada pelo usuário, não é possível descriptografar o arquivo.</li>
+    </ul>
+
+    <h2>3. Exclusão de Dados pelo Usuário</h2>
+    <p>Como todos os registros residem unicamente no dispositivo do usuário, a exclusão é imediata, total e controlada pelo próprio usuário a qualquer momento:</p>
+    <ul>
+      <li><strong>Exclusão Total pelo Aplicativo:</strong> Toque no ícone de <em>Armazenamento</em> no topo da tela principal, selecione <strong>"Apagar todos os dados deste aparelho"</strong> e confirme em <strong>"Apagar dados"</strong>. Todos os lançamentos, categorias personalizadas e orçamentos serão permanentemente eliminados.</li>
+      <li><strong>Exclusão Individual:</strong> Deslize qualquer entrada ou saída para a esquerda nas respectivas abas para excluí-la individualmente, ou toque no ícone de lixeira nos orçamentos.</li>
+      <li><strong>Exclusão por Desinstalação:</strong> Desinstalar o aplicativo Bolso ou limpar os dados do aplicativo nas configurações do Android apaga definitivamente todo o banco de dados local. Arquivos de backup (<code>.bolso</code>) salvos manualmente em pastas do aparelho podem ser apagados diretamente pelo gerenciador de arquivos do usuário.</li>
+    </ul>
+
+    <h2>4. Permissões e Notificações Locais</h2>
+    <p>Se autorizado pelo usuário, o Bolso utiliza notificações estritamente locais no próprio aparelho para lembrar datas de vencimento de contas pendentes. Os alertas são processados pelo sistema Android local, sem uso de servidores de push remotos. A permissão pode ser revogada a qualquer momento nas configurações do sistema.</p>
+
+    <h2>5. Público-Alvo e Crianças</h2>
+    <p>O Bolso é uma ferramenta de organização e planejamento financeiro pessoal destinada ao público geral e adulto, não sendo direcionado a crianças menores de 13 anos e não coletando informações de menores.</p>
+
+    <h2>6. Alterações e Contato</h2>
+    <p>Esta política pode ser atualizada para refletir melhorias no aplicativo. Para esclarecer dúvidas sobre privacidade ou segurança, entre em contato pelo e-mail <a href="mailto:contato@consultoriayrc.com.br">contato@consultoriayrc.com.br</a>.</p>
+  </div>
+</body>
+</html>
